@@ -1,0 +1,113 @@
+div.connectedUser {
+    border-radius: 10px;
+    color: rgb(85, 85, 85);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    width: 280px;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+}
+
+div.connectedUserHeader{
+    font-size: 12px;
+    border-bottom: 2px dotted black;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 3px;
+}
+.btn-default {
+  text-shadow: 0 1px 0 #fff;
+  background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+  background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#e0e0e0));
+  background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+  border-color: #dbdbdb;
+  border-color: #ccc;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border-radius: 4px;
+}
+/* on/off switch buttons */
+ul{
+    list-style:none;
+    height:26px;
+}
+
+ul li{
+    float:left;
+    line-height:23px;
+    font-size:11px;
+    padding:2px 10px 0; 
+    
+    background: #E5E5E5;
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F3F3F3), to(#E5E5E5));
+    text-shadow:0 1px 0 #FFF;
+    border-left:1px solid #D5D5D5;
+    border-top:1px solid #D5D5D5;
+    border-bottom:1px solid #D5D5D5;
+    -webkit-box-shadow:0 1px 0 #FFF inset, 0 0 5px rgba(0, 0, 0, .1) inset, 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+ul li:first-child{
+    -webkit-border-radius:5px 0 0 5px;
+}
+ul li:last-child{
+    -webkit-border-radius:0 5px 5px 0;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family:Helvetica, Arial;
+    text-transform:uppercase;
+    color:#a1a1a1;
+    cursor: pointer;
+}
+
+.on{
+    background: #505050;
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#777), to(#505050));
+    text-shadow:0 -1px 0 #444, 0 0 7px #9AE658;
+    border-right:1px solid #444;
+    border-top:1px solid #444;
+    border-bottom:1px solid #444;
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .7) inset, 0 1px 0 #FFF;
+    cursor: pointer;
+}
+
+ul li:not(.on):active{
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#f1f1f1));
+    cursor: pointer;
+}
+
+ul li.on a{
+    color:#7BBA47;
+    cursor: pointer;
+}
+/* end of on/off switch buttons */
