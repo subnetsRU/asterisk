@@ -165,6 +165,10 @@ wss.on('connection', function connection(ws) {
 	ws.send( m );
 	console.log('sended: %s', m);
     });
+
+    ws.on('error', function( error ) {
+	console.log('ERROR on socket occured:',error);
+    });
 });
 
 function init( ws ){

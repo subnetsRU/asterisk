@@ -1,4 +1,4 @@
-Conference by ARI and NodeJS.
+Conference by ARI and NodeJS
 ---------
 This is an example how to made conference between multiply users using ARI and NodeJS.
 
