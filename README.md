@@ -1,4 +1,5 @@
 Asterisk scripts and examples
 -----
 
-* [ARI conference] (https://github.com/subnetsRU/asterisk/tree/master/conference)
+* [conference] Example of conference made by ARI (Asterisk REST Interface)
+* [ajam_client] AJAM client for project http://bot.subnets.ru/telegram
