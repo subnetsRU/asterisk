@@ -17,12 +17,12 @@ ini_set('mbstring.internal_encoding','UTF-8');
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 
-define('VERSION','0.1');
+define('VERSION','0.2');
 
 $config=array();
 //Logging
 $config['log']=array(
-    'switch' => 1,				//0: отключено; 1: включено;
+    'switch' => 0,				//0: отключено; 1: включено;
     'dir'=> dirname(__FILE__)."/logs",		//не забываем создать директорию и разрешить запить полозователю, от которого запущен HTTP: chown -R www:www /full/path/to/logs
     'file'=>"ajam.log",
 );

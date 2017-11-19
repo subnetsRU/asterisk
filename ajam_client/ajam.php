@@ -1,8 +1,8 @@
 <?php
 /*
     Project: bot.SUBNETS.RU
-    AJAM.PHP version: 0.1
-    Last modify: 31.05.2017
+    AJAM.PHP version: 0.2
+    Last modify: 19.11.2017
 
     (c) 2017 SUBNETS.RU project (Moscow, Russia)
     Authors: Nikolaev Dmitry <virus@subnets.ru>, Panfilov Alexey <lehis@subnets.ru>
@@ -103,16 +103,16 @@ if (isset($config['restrictIP']) && is_array($config['restrictIP'])){
 	    }
 	    if (!$ipPassed){
 		$ret['error']=99;
-		$err[]="Access denied";
+		$err[]="Access denied for ".$ip;
 	    }
 	}else{
 	    $ret['error']=99;
-	    $err[]="Access denied";
+	    $err[]="Access denied for unknown IP";
 	}
     }
 }else{
     $ret['error']=99;
-    $err[]="Access denied";
+    $err[]="Access denied, config error";
 }
 
 if (count($err)==0){
@@ -164,13 +164,13 @@ if (count($err)==0){
 	    $actions=array("command","originate");
 	    if (!in_array(strtolower($cmd['action']),$actions)){
 		$ret['error']=98;
-		$err[]="Access denied";
+		$err[]="Access denied for action: ".$cmd['action'];
 	    }else{
 		if (isset($cmd['command'])){
 		    $access=access($cmd['command'],$config);
 		    if (!$access){
 			$ret['error']=97;
-			$err[]="Access denied";
+			$err[]="Access denied for command: ".$cmd['command'];
 		    }
 		}
 	    }
